@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwiaciarnia "W te pędy" – Olsztyn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .gallery img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kwiaciarnia "W te pędy"</h1>
+        <p>Olsztyn, ul. Lanca 2</p>
+        <nav>
+            <a href="#galeria">Galeria</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="galeria">
+            <h2>Nasze realizacje</h2>
+            <div class="gallery">
+                <!-- Zdjęcia z mediów społecznościowych -->
+                <img src="https://www.wtepedy.pl/wp-content/uploads/2021/05/bukiet1.jpg" alt="Bukiet 1">
+                <img src="https://www.wtepedy.pl/wp-content/uploads/2021/05/bukiet2.jpg" alt="Bukiet 2">
+                <img src="https://www.wtepedy.pl/wp-content/uploads/2021/05/bukiet3.jpg" alt="Bukiet 3">
+                <img src="https://www.wtepedy.pl/wp-content/uploads/2021/05/bukiet4.jpg" alt="Bukiet 4">
+            </div>
+        </section>
+        <section id="kontakt">
+            <h2>Formularz kontaktowy</h2>
+            <form action="mailto:kwiaciarnia@wtepedy.pl" method="post" enctype="text/plain">
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Adres e-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Kwiaciarnia "W te pędy"</p>
+        <a href="https://www.facebook.com/kwiaciarniawtepedy" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/kwiaciarniawtepedy" target="_blank">Instagram</a>
+    </footer>
+</body>
+</html>
